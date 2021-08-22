@@ -1,9 +1,24 @@
 import React from 'react';
+import { History } from 'history';
 
-const LoginScreen = () => {
+interface ChildComponentProps {
+    history: History;
+}
+
+const LoginScreen: React.FC<ChildComponentProps> = ({ history }) => {
+    const handleLogin = () => {
+        history.replace('/');
+    };
+
     return (
         <>
-            <h1>LoginScreen</h1>
+            <section className='container mt-5'>
+                <h1>Log In</h1>
+                <hr />
+                <button className='btn btn-primary' onClick={handleLogin}>
+                    Log In
+                </button>
+            </section>
         </>
     );
 };
