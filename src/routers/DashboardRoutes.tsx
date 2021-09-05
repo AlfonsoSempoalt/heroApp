@@ -9,12 +9,12 @@ const DashboardRoutes = () => {
     return (
         <>
             <Navbar />
-            <main>
+            <main className='container mt-3'>
                 <Switch>
                     <Route exact={true} path='/marvel' component={Marvel} />
                     <Route
                         exact={true}
-                        path='/hereo/:heroId'
+                        path='/hero/:heroId'
                         component={HeroScreen}
                     />
                     <Route exact={true} path='/dc' component={Dc} />
