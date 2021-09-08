@@ -22,17 +22,13 @@ const HeroScreen: React.FC<ChildComponentProps> = ({ history }) => {
         }
     };
 
-    const { superhero,
-            publisher,
-            alter_ego,
-            first_appearance,
-            characters 
-        } = hero;
+    const { superhero, publisher, alter_ego, first_appearance, characters } =
+        hero;
 
     return (
         <>
             <main className='row mt-5'>
-                <section className='col-4'>
+                <section className='col-4 animate_animated animate__fadeInLeft'>
                     <img
                         src={`../assets/heroes/${heroId}.jpg`}
                         alt={superhero}
