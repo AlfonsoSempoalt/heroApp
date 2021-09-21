@@ -8,7 +8,7 @@ export const Navbar = () => {
                 Asociaciones
             </Link>
 
-            <div className='navbar-collapse'>
+            <div className='navbar-collapse' >
                 <div className='navbar-nav'>
                     <NavLink
                         activeClassName='active'
@@ -39,8 +39,8 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className='navbar-collapse collapse w-100 order-3 dual-collapse2'>
-                <ul className='navbar-nav ml-auto'>
+            <div className='navbar-collapse collapse w-100 order-3 dual-collapse'>
+                <ul className='navbar-nav ms-auto'>
                     <NavLink
                         activeClassName='active'
                         className='nav-item nav-link'
