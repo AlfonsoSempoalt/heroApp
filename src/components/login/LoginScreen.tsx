@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { History } from 'history';
+import { AuthContext } from '../auth/AuthContext';
+import { types } from '../types/types';
 
 interface ChildComponentProps {
     history: History;
 }
 
 const LoginScreen: React.FC<ChildComponentProps> = ({ history }) => {
+    const { dispatch } = useContext(AuthContext);
+    const lastPath = localStorage.getItem('lastPath') || '/';
     const handleLogin = () => {
-        history.replace('/');
+        dispatch({
+            type: types.login,
+            payload: {
+                name: 'Alfonso',
+            },
+        });
+        history.replace(lastPath);
     };
 
     return (

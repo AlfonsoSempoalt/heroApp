@@ -28,7 +28,7 @@ const HeroScreen: React.FC<ChildComponentProps> = ({ history }) => {
     return (
         <>
             <main className='row mt-5'>
-                <section className='col-4 animate_animated animate__fadeInLeft'>
+                <section className='col-4 animate__animated animate__fadeInLeft'>
                     <img
                         src={`../assets/heroes/${heroId}.jpg`}
                         alt={superhero}
